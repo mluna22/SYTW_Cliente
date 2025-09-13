@@ -1,0 +1,31 @@
+@import "_variables.scss";
+@import "_status.scss";
+
+body {
+  text-align: center;
+}
+
+.status {
+  
+  &--success {
+    @extend %status_base;
+    color: $success;
+  }
+  
+  &--error {
+    @extend %status_base;
+    color: $error;
+    a {
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  &--info {
+    @extend %status_base;
+    color: $info;
+  }
+}
+
