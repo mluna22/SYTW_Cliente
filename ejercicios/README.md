@@ -33,9 +33,9 @@ body, h1, h2 {
 ```scss
 // _variables.scss
 $success: lime;
-$error: orangered;
-$info: dodgerblue;
-
+$error: red;
+$info: blue;
+$shadow: dimgrey;
 $background: lightgrey;
 ```
 
@@ -47,7 +47,7 @@ $background: lightgrey;
   border-radius: 5px;
   margin: 1rem auto;
   background-color: $background;
-  text-shadow: 2px 2px 10px grey;
+  text-shadow: 2px 2px 10px $shadow;
   display: block;
   width: fit-content;
 }
@@ -95,7 +95,7 @@ body {
   border-radius: 5px;
   margin: 1rem auto;
   background-color: lightgrey;
-  text-shadow: 2px 2px 10px grey;
+  text-shadow: 2px 2px 10px dimgrey;
   display: block;
   width: fit-content; }
 
@@ -105,13 +105,13 @@ body {
 .status--success {
   color: lime; }
 .status--error {
-  color: orangered; }
+  color: red; }
   .status--error a {
     font-weight: bold; }
     .status--error a:hover {
       text-decoration: underline; }
 .status--info {
-  color: dodgerblue; }
+  color: blue; }
 ```
 
 ![Ejercicio 2](./images/2.png)
