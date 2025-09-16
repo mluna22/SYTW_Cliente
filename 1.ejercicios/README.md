@@ -183,3 +183,34 @@ body {
 ```
 
 ![Ejercicio 3](./images/3.png)
+
+# Ejercicio 4: Utiliza un bucle @for para generar 5 clases de espaciado llamadas margin-1 a .margin-5. Cada clase debe tener un margin que se incremente en 10px por cada iteración. Transpila el archivo y revisa el CSS generado.
+
+```scss
+// styles.scss
+@for $i from 1 through 5 {
+  .margin-#{$i} { 
+    margin: 10px * ($i - 1);
+  }
+}
+```
+
+```css
+/* styles.css */
+.margin-1 {
+  margin: 0px; }
+
+.margin-2 {
+  margin: 10px; }
+
+.margin-3 {
+  margin: 20px; }
+
+.margin-4 {
+  margin: 30px; }
+
+.margin-5 {
+  margin: 40px; }
+```
+
+![Ejercicio 4](./images/4.png)
