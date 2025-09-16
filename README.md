@@ -1,4 +1,6 @@
 # Sistemas y Tecnologías Web: Cliente
-## [Nombre de la Práctica]
+## Introducción a SASS
 
-### Ejercicio 1: [Descripción del Ejercicio 1]
+### 1. Resolver los ejercicios SASS: [Ejercicios SASS](./ejercicios/README.md)
+
+### 2. Crear una página web usando Flex y Grid con el layout: 
