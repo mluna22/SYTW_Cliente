@@ -115,3 +115,71 @@ body {
 ```
 
 ![Ejercicio 2](./images/2.png)
+
+### Ejercicio 3: Crea dos mixins, uno que permita establecer la dirección de un contenedor flexbox y el otro que permita dar un tamaño específico en un elemento. Verifica que transpila y funciona correctamente sobre algún ejemplo.
+
+```scss
+// _mixins.scss
+@mixin direction($dir: row) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+@mixin size($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+```
+
+```scss
+// styles.scss
+@import "_mixins.scss";
+
+.box-1 {
+  @include direction(column);
+  @include size(200px, 200px);
+  background: lightblue;
+}
+
+.box-2 {
+  @include direction(row);
+  @include size(300px, 100px);
+  background: lightcoral;
+}
+
+.box-3 {
+  @include direction();
+  @include size(50px, 50px);
+  background: lightgreen;
+  border: 1px solid black;
+  margin: 10px;
+}
+```
+
+```css
+/* styles.css */
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  background: lightblue; }
+
+.box-2 {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 100px;
+  background: lightcoral; }
+
+.box-3 {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  background: lightgreen;
+  border: 1px solid black;
+  margin: 10px; }
+```
+
+![Ejercicio 3](./images/3.png)

@@ -1,0 +1,22 @@
+@import "_mixins.scss";
+
+.box-1 {
+  @include direction(column);
+  @include size(200px, 200px);
+  background: lightblue;
+}
+
+.box-2 {
+  @include direction(row);
+  @include size(300px, 100px);
+  background: lightcoral;
+}
+
+.box-3 {
+  @include direction();
+  @include size(50px, 50px);
+  background: lightgreen;
+  border: 1px solid black;
+  margin: 10px;
+}
+

@@ -1,0 +1,9 @@
+@mixin direction($dir: row) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+@mixin size($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
