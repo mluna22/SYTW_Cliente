@@ -1,0 +1,9 @@
+section {
+  @include center;
+  @include section-title;
+
+  background-color: $section-bg;
+  
+  margin-top: $margin;
+  margin-bottom: $margin;
+}

@@ -1,0 +1,19 @@
+header {
+  @include center;
+  @include section-title;
+  
+  background-color: $header-bg;
+  border: $border-width solid $border;
+
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  h3 {
+    text-align: left;
+  }
+}
