@@ -3,4 +3,4 @@
 
 ### 1. Resolver los ejercicios SASS: [Ejercicios SASS](./1.ejercicios/README.md)
 
-### 2. Crear una página web usando Flex y Grid con el layout: 
+### 2. Crear una página web usando Flex y Grid con el layout: [Página Web](./2.pagina_web/README.md)
